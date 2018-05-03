@@ -2,7 +2,7 @@
 #read charlie3019.xyz
 #IP=echo $(curl -4 icanhazip.com)
 apt update && apt upgrade
-mkdir /webdav /ocx /dl
+#mkdir /webdav /ocx /dl
 apt install -y mosh links tasksel make cmake build-essential unzip gcc pip
 
 echo $(curl -4 icanhazip.com) charlie3019.xyz >> /etc/hosts
@@ -21,7 +21,7 @@ echo "alias w='apachectl configtest'" >> ~/.bashrc
 echo "alias n='nano'" >> ~/.bashrc
 echo "alias aw='apachectl reload'" >> ~/.bashrc
 echo "alias upg='apt update && apt upgrade'" >> ~/.bashrc
-echo "alias nsite='echo SITES-ENABLED && ls /etc/nginx/sites-enabled/ && echo SITES-AVAILABLE && ls /etc/nginx/sites-available && echo conf's && ls /etc/nginx/conf.d/'" >> ~/.bashrc
+echo "alias nsite='echo SITES-ENABLED && ls /etc/nginx/sites-enabled/ && echo SITES-AVAILABLE && ls /etc/nginx/sites-available && echo confs && ls /etc/nginx/conf.d/'" >> ~/.bashrc
 echo "alias nar='apachectl reload && echo apache restarted && nginx -s reload && echo nginx restarted'" >> ~/.bashrc
 echo "alias ngt='nginx -t'" >> ~/.bashrc
 echo "alias ngs='nginx -s'" >> ~/.bashrc
